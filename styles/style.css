@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/kumbh-sans');
+
+:root {
+    --dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --very-dark-blue-text: hsl(237, 12%, 33%);
+    --dark-blue-text: hsl(240, 6%, 50%);
+    --divider-color: hsl(240, 5%, 91%);
+}
+
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 20px 25px rgb(0, 0, 0, 0.3);
+}
+
+.img-container {
+    position: relative;
+    width:50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pattern-image {
+    width: 850px;
+    height: 850px;
+    position: absolute;
+    left: -460px;
+    bottom: -90px;
+}
+
+.woman-online-image {
+    position: absolute;
+    left: -84px;
+    top: 45px;
+}
+
+.box-image {
+    position: absolute;
+    top: 180px;
+    left: -130px;
+}
+
+.pattern-image-mobile {
+    display: none;
+}
+
+.woman-online-image-mobile {
+    display: none;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50%;
+    padding: 70px 150px 70px 50px;
+}
+
+.menu {
+    font-size: 12px;
+    border-bottom: 1px solid var(--divider-color);
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu:hover .flex {
+    color: var(--soft-red);
+}
+
+.menu:focus {
+    height: unset;
+  }
+
+.menu:focus .flex {
+    font-weight: bold;
+}
+
+.menu:focus p {
+    color: var(--very-dark-blue-text);
+}
+
+.menu:focus .arrow {
+    transform: rotate(180deg);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    align-self: center;
+}
