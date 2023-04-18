@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+    .container {
+        width: 85%;
+        flex-direction: column;
+        min-height: 60vh;
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 20%;
+        overflow: unset;
+    }
+
+    .pattern-image {
+        display: none;
+    }
+
+    .woman-online-image {
+        display: none;
+    }
+
+    .box-image {
+        display: none;
+    }
+
+    .pattern-image-mobile {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .woman-online-image-mobile {
+        display: block;
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+
+    .accordion-container {
+        padding: unset;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+
+    .accordion-container h1 {
+        text-align: center;
+    }
+}
